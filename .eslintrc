@@ -201,7 +201,7 @@
     'eol-last': 0,
 
     // require function expressions to have a name
-    'func-names': 1,
+    'func-names': 0,
 
     // enforces use of function declarations or expressions
     'func-style': 0,

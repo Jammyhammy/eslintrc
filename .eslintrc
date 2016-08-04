@@ -223,7 +223,7 @@
 
     // specify whether double or single quotes should be used in JSX attributes
     // http://eslint.org/docs/rules/jsx-quotes
-    'jsx-quotes': [0, 'prefer-double'],
+    //'jsx-quotes': [0, 'prefer-double'],
 
     // enforces spacing between keys and values in object literal properties
     'key-spacing': [0, { beforeColon: false, afterColon: true }],
@@ -431,7 +431,7 @@
     'require-jsdoc': 0,
 
     // require or disallow use of semicolons instead of ASI
-    semi: [0, 'always'],
+    semi: [1, 'always'],
 
     // enforce spacing before and after semicolons
     'semi-spacing': [0, { before: false, after: true }],
@@ -896,7 +896,7 @@
 
     // Disallow undeclared variables in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
-    'react/jsx-no-undef': 2,
+    'react/jsx-no-undef': 1,
 
     // Enforce PascalCase for user-defined JSX components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
@@ -943,11 +943,11 @@
 
     // Prevent usage of setState in componentDidMount
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
-    'react/no-did-mount-set-state': [2],
+    'react/no-did-mount-set-state': [1],
 
     // Prevent usage of setState in componentDidUpdate
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-update-set-state.md
-    'react/no-did-update-set-state': [2],
+    'react/no-did-update-set-state': [1],
 
     // Prevent direct mutation of this.state
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
@@ -959,7 +959,7 @@
 
     // Prevent multiple component definition per file
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
-    'react/no-multi-comp': [2, { ignoreStateless: true }],
+    'react/no-multi-comp': [1, { ignoreStateless: true }],
 
     // Prevent usage of setState
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-set-state.md
@@ -971,11 +971,11 @@
 
     // Prevent usage of unknown DOM property
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
-    'react/no-unknown-property': 2,
+    'react/no-unknown-property': 0,
 
     // Require ES6 class declarations over React.createClass
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
-    'react/prefer-es6-class': [2, 'always'],
+    'react/prefer-es6-class': [1, 'always'],
 
     // Require stateless functions when not using lifecycle methods, setState or ref
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
@@ -983,7 +983,7 @@
 
     // Prevent missing props validation in a React component definition
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
-    'react/prop-types': [2, { ignore: [], customValidators: [] }],
+    'react/prop-types': [1, { ignore: [], customValidators: [] }],
 
     // Prevent missing React when using JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
@@ -1064,31 +1064,7 @@
     // warn against using findDOMNode()
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
     'react/no-find-dom-node': 1,
-	
-		"eqeqeq": 2,
-		"no-undef": 1,
-		"no-unused-vars": 1,
-		"semi": 1,
-		"semi-spacing": 1,
-		"valid-jsdoc": [
-			0,
-			{ "requireReturn": false }
-		],
-
-		"react/display-name": 0,
-		"react/jsx-no-undef": 1,
-		"react/jsx-sort-props": 0,
-		"react/jsx-uses-react": 1,
-		"react/jsx-uses-vars": 1,
-		"react/no-did-mount-set-state": 1,
-		"react/no-did-update-set-state": 1,
-		"react/no-direct-mutation-state": 1,
-		"react/no-multi-comp": 0,
-		"react/no-set-state": 0,
-		"react/no-unknown-property": 1,
-		"react/prop-types":0,
-		"react/react-in-jsx-scope": 0,
-		"react/self-closing-comp": 1,
-		"react/wrap-multilines": 1
+	"no-undef": 1,
+	"no-unused-vars": 1,
 	}
 }
